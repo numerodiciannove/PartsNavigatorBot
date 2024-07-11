@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "orders",
+    "users",
+    "PartsNavigatorBot",
 ]
 
 MIDDLEWARE = [
@@ -100,15 +103,14 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = "users.Manager"
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = 'UTC'
-
-USE_I18N = True
+TIME_ZONE = "Europe/Kiev"
 
 USE_TZ = True
 
